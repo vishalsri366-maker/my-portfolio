@@ -1,65 +1,78 @@
+/* Global */
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #0f172a, #1e293b);
-    color: white;
+    background: #0f172a;
+    color: #e2e8f0;
 }
 
 /* Header */
 header {
     text-align: center;
     padding: 80px 20px;
-    background: linear-gradient(135deg, #2563eb, #1e40af);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    background: linear-gradient(135deg, #1e293b, #0f172a);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
 }
 
 header h1 {
-    font-size: 40px;
+    font-size: 42px;
     margin: 0;
+    color: #38bdf8;
 }
 
 header p {
-    opacity: 0.9;
+    color: #94a3b8;
 }
 
 /* Sections */
 section {
-    padding: 40px;
     max-width: 1000px;
     margin: auto;
+    padding: 40px 20px;
 }
 
-/* Glass Card Effect */
+/* Glass Cards */
 .card {
-    background: rgba(255, 255, 255, 0.08);
-    backdrop-filter: blur(10px);
-    padding: 20px;
+    background: rgba(255, 255, 255, 0.05);
     border-radius: 15px;
+    padding: 25px;
     margin-bottom: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.1);
     transition: 0.3s;
 }
 
 .card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+/* Headings */
+h2 {
+    color: #38bdf8;
 }
 
 /* Skills */
 .skills span {
     display: inline-block;
-    background: #2563eb;
+    background: rgba(56,189,248,0.2);
+    color: #38bdf8;
     padding: 8px 15px;
     border-radius: 20px;
     margin: 5px;
     font-size: 14px;
 }
 
-/* Buttons */
+/* Links */
 a {
     color: #38bdf8;
-    text-decoration: none;
 }
 
-a:hover {
-    text-decoration: underline;
+/* Scrollbar (premium feel) */
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-thumb {
+    background: #38bdf8;
+    border-radius: 10px;
 }
